@@ -1,0 +1,36 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+checkpoint:
+  path: ""
+  global_step: null
+  use_non_ema: false
+diffusion_cfg_path: ""
+VQEncoder_path: ""
+VQDecoder_path: ""
+
+sampling:
+  seed: 1337
+  precomputed_contexts_file: ""
+  context_ids_file: ""
+  save_dir: ""
+  two_stage: true
+  stage2_only: false
+  max_batch: 50
+  identities_per_step: 1
+  decode_batch: 50
+  resume: false
+  noise_mode: per_sample
+  sample_config:
+    cfg_scale: 1.0
+    ddim_steps: 50
+    eta: 0.0
+    MSE_th: 0.005
+    step_th: 500
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
