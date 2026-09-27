@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--identities', type=int, default=10000)
     parser.add_argument('--samples', type=int, default=50)
     parser.add_argument('--lb', type=float, default=0.5)
-    parser.add_argument('--seed', type=int, default=1337)
+    parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--batch', type=int, default=512)
     parser.add_argument('--device', default='cuda:0')
     args = parser.parse_args()
