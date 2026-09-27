@@ -25,7 +25,7 @@ Inputs: embeddings `(N, 512)` and integer identity labels `(N,)`, saved as NumPy
 
 ```bash
 python train.py --emb "$EMBEDDINGS" --labels "$LABELS" \
-  --out "$TRAIN_OUTPUT" --seed 1337
+  --out "$TRAIN_OUTPUT"
 ```
 
 ## Sampling
